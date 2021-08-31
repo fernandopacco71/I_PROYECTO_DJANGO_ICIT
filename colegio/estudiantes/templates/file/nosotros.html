@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block titulo %}
+    <title>Nosotros</title>
+{% endblock %}
+
+
+{% block menu %}
+<nav class="navbar navbar-expand-lg  navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}">Colegio CIMAC-ICIT</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="{% url 'home' %}">INICIO</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'nosotros' %}">NOSOTROS</a>
+                <a class="nav-link" href="{% url 'servicios' %}">SERVICIO</a>
+                <a class="nav-link" href="{% url 'contactos' %}">CONTACTOS</a> 
+            </div>
+        </div>
+    </div>
+</nav>
+{% endblock %}
+
+
+{% block contenido %}
+    <h1>Nosotros</h1>
+{% endblock %}
