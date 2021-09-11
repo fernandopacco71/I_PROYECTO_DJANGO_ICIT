@@ -1,14 +1,30 @@
 from django.shortcuts import render
 
-# Create your views here.
+
 def home(request):
-    return render(request, 'file/home.html')
+    proyecto = " - Colegio CIMAC-ICIT"
+    cxt={
+        'proyecto':proyecto,
+    }
+    return render(request, 'file/home.html',cxt)
 
 def contactos(request):
-    return render(request, 'file/contactos.html')
+    proyecto = " - Colegio CIMAC-ICIT"
+    cxt={
+        'proyecto':proyecto,
+    }
+    return render(request, 'file/contactos.html',cxt)
 
 def nosotros(request):
-    return render(request, 'file/nosotros.html')
+    proyecto = " - Colegio CIMAC-ICIT"
+    cxt={
+        'proyecto':proyecto,
+    }
+    return render(request, 'file/nosotros.html',cxt)
 
 def servicios(request):
-    return render(request, 'file/servicios.html')
+    proyecto = " - Colegio CIMAC-ICIT"
+    cxt={
+        'proyecto':proyecto,
+    }
+    return render(request, 'file/servicios.html',cxt)
